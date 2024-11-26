@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Games</title>
+  <link rel="stylesheet" href="Task4.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="Projects.html">Project</a></li>
+        <li><a href="Product list.html">Games</a></li>
+        <li><a href="toDo.html">To-Do</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="products">
+      <h2>Games</h2>
+      <div>
+        <label for="filter-category">Filter by Genre:</label>
+        <select id="filter-category">
+          <option value="all">All</option>
+          <option value="action">Action</option>
+          <option value="strategy">Strategy</option>
+          <option value="Adventure">Adventure</option>
+        </select>
+        <label for="sort-price">Sort by Price:</label>
+        <select id="sort-price">
+          <option value="asc">Low to High</option>
+          <option value="desc">High to Low</option>
+        </select>
+      </div>
+      <div id="product-list"></div>
+    </section>
+  </main>
+  <script src="Task4.js"></script>
+</body>
+</html>
+

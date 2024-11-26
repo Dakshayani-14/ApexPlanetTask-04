@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do</title>
+  <link rel="stylesheet" href="Task4.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="Projects.html">Project</a></li>
+        <li><a href="Product list.html">Games</a></li>
+        <li><a href="toDo.html">To-Do</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="todo-app">
+      <h2>Game Notes</h2>
+      <input type="text" id="todo-input" placeholder="Add a note...">
+      <button id="add-btn">Add</button>
+      <ul id="todo-list"></ul>
+    </section>
+  </main>
+  <script>
+    // Select elements
+    const todoInput = document.getElementById('todo-input');
+    const addBtn = document.getElementById('add-btn');
+    const todoList = document.getElementById('todo-list');
+
+    // Function to add a task
+    function addTask() {
+      const taskText = todoInput.value.trim();
+      if (taskText === '') {
+        alert('Please enter a task.');
+        return;
+      }
+
+      // Create a new list item
+      const li = document.createElement('li');
+      li.className = 'todo-item';
+
+      // Add task text
+      li.textContent = taskText;
+
+      // Create delete button
+      const deleteBtn = document.createElement('button');
+      deleteBtn.textContent = 'Delete';
+      deleteBtn.className = 'delete-btn';
+
+      // Delete functionality
+      deleteBtn.addEventListener('click', () => {
+        todoList.removeChild(li);
+      });
+
+      // Append delete button to the list item
+      li.appendChild(deleteBtn);
+
+      // Add list item to the task list
+      todoList.appendChild(li);
+
+      // Clear input field
+      todoInput.value = '';
+    }
+
+    // Attach event listener to the Add button
+    addBtn.addEventListener('click', addTask);
+  </script>
+</body>
+</html>

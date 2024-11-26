@@ -1,0 +1,207 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #01010c;
+    color: #377dcd;
+  }
+  
+  header {
+    background-color: #333;
+    color: #8c8383;
+    padding: 10px 0;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  header nav ul li {
+    margin: 0 15px;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  header nav ul li a:hover {
+    color: #d266ec;
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: #333;
+    color: #fff;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+  }
+  
+  /* About, Projects, and Contact Sections */
+  main section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    background: #1c1212;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  h2 {
+    color: #eef6f5;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .contact form label,
+  .contact form input,
+  .contact form textarea,
+  .contact form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .contact form input,
+  .contact form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .contact form button {
+    background: #333333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .contact form button:hover {
+    background: #f39c12;
+  }
+  
+  /* Product Page */
+  .products div {
+    margin: 20px auto;
+    max-width: 600px;
+  }
+  
+  #product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+    
+  .products {
+  margin: 20px;
+  text-align: center;
+}
+
+.game-card {
+  display: inline-block;
+  width: 200px;
+  border: 1px solid #ad8080;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 10px;
+  text-align: center;
+}
+
+.game-image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+  
+ 
+.game-card h3 {
+    margin: 0;
+  }
+  
+  .game-card p {
+    font-size: 14px;
+  }
+  
+  /* To-Do List */
+  .todo-app {
+    text-align: center;
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  
+  #todo-input {
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  #add-btn {
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #add-btn:hover {
+    background: #f39c12;
+  }
+  
+  #todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  #todo-list li {
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: left;
+  }
+  
+
+  .delete-btn {
+    margin-left: 10px;
+    color: white;
+    background-color: rgb(5, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+  }
+  
+  .delete-btn:hover {
+    background-color: rgb(6, 3, 3);
+  }s
+  
+  .todo-item {
+    list-style: none;
+    margin: 10px 0;
+  }
+  
+  
+  
